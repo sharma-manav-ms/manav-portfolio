@@ -169,31 +169,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Flip-cards replacing the previous stats block -->
-        <style>
-            /* Scoped flip-card styles for the stats area:
-              - Medium-width rectangles (breadth unchanged, length increased)
-              - 3D flip on hover/focus, keyboard accessible
-              - Responsive: stack vertically on small screens
-            */
-          .stats-flipwrap{display:flex;gap:1rem;justify-content:center;align-items:stretch;flex-wrap:wrap}
-          .stat-card{perspective:1000px;flex:0 1 30%;max-width:420px;min-width:220px}
-          /* Increased height by additional 240px (now 480px) as requested */
-          .stat-card-inner{position:relative;width:100%;height:480px;transition:transform .75s;transform-style:preserve-3d;border-radius:.5rem}
-          .stat-card:hover .stat-card-inner,.stat-card:focus-within .stat-card-inner{transform:rotateY(180deg)}
-          .stat-front,.stat-back{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;backface-visibility:hidden;padding:1rem;border-radius:.5rem;box-shadow:0 6px 18px rgba(0,0,0,.06)}
-          .stat-front{background:var(--bs-white,#fff);color:var(--bs-body-color,#222)}
-          .stat-front .label{font-size:1.05rem;font-weight:600;text-align:center}
-          .stat-front .subtitle{margin-top:.25rem;font-size:.9rem;color:rgba(0,0,0,.6);text-align:center}
-          /* Light icons for each card */
-          .stat-icon{font-size:2.1rem;margin-bottom:.4rem;opacity:.95}
-          .icon-project{color:rgba(13,110,253,0.9)}
-          .icon-case{color:rgba(25,135,84,0.9)}
-          .icon-patent{color:rgba(255,193,7,0.95)}
-          .stat-back{background:var(--bs-light,#f8f9fa);color:#222;transform:rotateY(180deg);overflow:auto;text-align:left}
-          .stat-back h5{margin:0 0 .5rem 0}
-          @media (max-width:767px){.stats-flipwrap{flex-direction:column}.stat-card{max-width:none}}
-        </style>
+        <!-- Flip-cards replacing the previous stats block (styles moved to assets/css/main.css) -->
 
         <div class="stats-flipwrap" role="list">
 
